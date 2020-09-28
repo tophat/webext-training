@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Web Ext Training",
+  "version": "0.0.0",
+  "description": "Semantic versioning your web extension",
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": ["*://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  }
+}
