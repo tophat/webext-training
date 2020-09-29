@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/tophat/webext-training/issues"
   },
-  "homepage": "https://github.com/tophat/webext-training#readme"
+  "homepage": "https://github.com/tophat/webext-training#readme",
+  "devDependencies": {
+    "@semantic-release/changelog": "^5.0.1",
+    "semantic-release": "^17.1.2",
+    "semantic-release-chrome": "^1.1.3",
+    "semantic-release-firefox-add-on": "^0.2.6"
+  }
 }
