@@ -1,0 +1,19 @@
+{
+  "name": "webext-training",
+  "version": "0.0.1",
+  "description": "Semantic versioning your web extension",
+  "main": "content.js",
+  "scripts": {
+    "test": "echo 'Good tests and continous deployments make the world go round'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tophat/webext-training.git"
+  },
+  "author": "iamogbz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tophat/webext-training/issues"
+  },
+  "homepage": "https://github.com/tophat/webext-training#readme"
+}
