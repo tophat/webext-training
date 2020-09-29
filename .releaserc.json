@@ -1,0 +1,37 @@
+{
+  "dryRun": false,
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    [
+      "semantic-release-chrome",
+      {
+        "extensionId": "ffifqrxowctbwefuzphbhgsreeltlrhw",
+        "asset": "webext-training.zip"
+      }
+    ],
+    [
+      "semantic-release-firefox-add-on",
+      {
+        "artifactsDir": ".",
+        "extensionId": "biciwyjkdhcmbrkuugxdpxmsccxdiyib",
+        "sourceDir": ".",
+        "targetXpi": "webext-training.xpi"
+      }
+    ],
+    [
+      "@semantic-release/github",
+      {
+        "assets": [
+          {
+            "path": "webext-training.zip"
+          },
+          {
+            "path": "webext-training.xpi"
+          }
+        ]
+      }
+    ]
+  ]
+}
