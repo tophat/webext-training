@@ -20,5 +20,12 @@ jobs:
           yarn test --ci --coverage
       - name: Release
         if: github.ref == 'refs/heads/master'
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GOOGLE_CLIENT_ID: ${{ secrets.GOOGLE_CLIENT_ID }}
+          GOOGLE_CLIENT_SECRET: ${{ secrets.GOOGLE_CLIENT_SECRET }}
+          GOOGLE_REFRESH_TOKEN: ${{ secrets.GOOGLE_REFRESH_TOKEN }}
+          FIREFOX_API_KEY: ${{ secrets.FIREFOX_API_KEY }}
+          FIREFOX_SECRET_KEY: ${{ secrets.FIREFOX_SECRET_KEY }}
         run: |
           yarn semantic-release
